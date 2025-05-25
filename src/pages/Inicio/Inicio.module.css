@@ -1,0 +1,65 @@
+.inicio {
+    background-color: gray;
+}
+
+.marca-grande {
+    font-size: 100px;
+    font-weight: bold;
+    text-align: center;
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    transform: translateY(0);
+    color: white;
+    padding: 150px;
+}
+
+.oculto {
+    opacity: 0;
+    transform: translateY(-100px) scale(0.5);
+    pointer-events: none;
+}
+
+/* Ya no usas background-image en hero */
+.hero {
+    background-color: white;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    color: black;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #0a1927;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.btn:hover {
+    color: white;
+    background-color: #08121c;
+}
+
+@media (max-width: 768px) {
+    .marca-grande {
+        font-size: 50px;
+        padding: 80px;
+    }
+}
+
+
+

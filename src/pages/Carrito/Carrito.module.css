@@ -1,0 +1,123 @@
+.fondo {
+    background-color: white;
+}
+
+.cartContainer {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.cartContainer h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #0a1927;
+}
+
+.cartList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cartItem {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    border: 2px solid #0a1927;
+}
+
+.itemImage {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #dcdcdc;
+}
+
+.itemDetails {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.itemDetails h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    color: #0a1927;
+}
+
+.itemDetails p {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.buttons button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 12px;
+    font-size: 14px;
+    background-color: #0a1927;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.buttons button:hover {
+    background: #333;
+}
+
+.clearButton {
+    display: block;
+    width: 50%;
+    padding: 10px;
+    margin-top: 20px;
+    background: red;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.clearButton:hover {
+    background: darkred;
+}
+
+.total {
+    color: #0a1927;
+}
+
+.buyWhatsAppButton {
+    width: 50%;
+    background-color: #25d366;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.buyWhatsAppButton:hover {
+    background-color: #1ebe57;
+}
+
