@@ -1,5 +1,12 @@
 .inicio {
     background-color: gray;
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/e-commerce-gibra.firebasestorage.app/o/prueba2.png?alt=media&token=792c7de5-5d74-4078-9fe8-1a23486ccc37");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .marca-grande {
@@ -9,7 +16,6 @@
     transition: opacity 0.6s ease, transform 0.6s ease;
     transform: translateY(0);
     color: white;
-    padding: 150px;
 }
 
 .oculto {
@@ -59,7 +65,10 @@
         font-size: 50px;
         padding: 80px;
     }
-}
 
+    .inicio {
+        background-image: url("https://firebasestorage.googleapis.com/v0/b/e-commerce-gibra.firebasestorage.app/o/prueba.png?alt=media&token=1e2633c3-5214-4be8-9cd0-e4b58885636c");
+    }
+}
 
 
