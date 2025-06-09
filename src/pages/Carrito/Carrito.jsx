@@ -62,7 +62,7 @@ const Carrito = () => {
 
         // Armar mensaje con el ID incluido
         const mensaje = armarMensajeWhatsApp(orderId, cartItems, totalPrice);
-        window.open(`https://wa.me/573152632395?text=${mensaje}`, "_blank");
+        window.open(`https://wa.me/573209891782?text=${mensaje}`, "_blank");
     };
 
     return (
