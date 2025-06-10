@@ -52,17 +52,17 @@ const Carrito = () => {
         return encodeURIComponent(mensaje);
     };
 
-    const handleComprarWhatsApp = async () => {
+    const handleComprarWhatsApp = () => {
         const uid = localStorage.getItem("uid");
         if (!uid || cartItems.length === 0) return;
 
-        // Guardar orden en Firestore y obtener ID
-        const orderId = await guardarOrden(uid, cartItems, totalPrice);
-        if (!orderId) return;
+        // Guardar la orden sin esperar la respuesta
+        guardarOrden(uid, cartItems, totalPrice).then((orderId) => {
+            if (!orderId) return;
 
-        // Armar mensaje con el ID incluido
-        const mensaje = armarMensajeWhatsApp(orderId, cartItems, totalPrice);
-        window.open(`https://wa.me/573209891782?text=${mensaje}`, "_blank");
+            const mensaje = armarMensajeWhatsApp(orderId, cartItems, totalPrice);
+            window.location.href = `https://wa.me/573209891782?text=${mensaje}`;
+        });
     };
 
     return (
